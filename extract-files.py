@@ -140,6 +140,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('sched_get_priority_max: 1'),
 >>>>>>> ef2644a (sm8650-common: extract-files: Patch public-libraries.txt to allow opcamera to access arcsoft libs)
     'vendor/etc/sensors/hals.conf': blob_fixup()
+        .regex_replace(r'sensors\.qsh\.so', 'sensors.fusionlight.so')
         .add_line_if_missing('sensors.oplus.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),
