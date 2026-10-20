@@ -5,6 +5,10 @@
 
 COMMON_PATH := device/oneplus/sm8650-common
 
+
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+
 # A/B
 AB_OTA_UPDATER := true
 
