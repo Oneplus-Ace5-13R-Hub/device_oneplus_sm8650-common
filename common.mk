@@ -140,7 +140,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
 # Dolby
-$(call inherit-product, vendor/sony/dolby/sonydolby.mk)
+$(call inherit-product, vendor/oneplus/dolby/sonydolby.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
