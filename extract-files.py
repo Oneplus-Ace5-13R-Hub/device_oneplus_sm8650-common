@@ -130,8 +130,6 @@ blob_fixups: blob_fixups_user_type = {
         ),
     'vendor/etc/pwr/PowerFeatureConfig.xml': blob_fixup()
         .regex_replace(r'(<Name>GamePowerOptFeature</Name>\s*<Enable>)0(<\/Enable>)', r'\g<1>1\g<2>'),
-<<<<<<< HEAD
-=======
     'vendor/etc/public.libraries.txt': blob_fixup()
         .add_line_if_missing('libarcsoft_hdr_couple_api.so')
         .add_line_if_missing('libarcsoft_high_dynamic_range_couple.so')
@@ -147,7 +145,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/seccomp_policy/gnss@2.0-qsap-location.policy': blob_fixup()
         .add_line_if_missing('sched_get_priority_min: 1')
         .add_line_if_missing('sched_get_priority_max: 1'),
->>>>>>> ef2644a (sm8650-common: extract-files: Patch public-libraries.txt to allow opcamera to access arcsoft libs)
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .regex_replace(r'sensors\.qsh\.so', 'sensors.fusionlight.so')
         .add_line_if_missing('sensors.oplus.so'),
