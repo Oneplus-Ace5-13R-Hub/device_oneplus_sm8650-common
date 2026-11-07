@@ -37,7 +37,6 @@ on post-fs-data
     chown cameraserver cameraserver /mnt/vendor/persist/camera/cm_tcs3449_*
     chmod 0666 /mnt/vendor/persist/camera/spectrum_sn.json
     chmod 0666 /mnt/vendor/persist/camera/cm_tcs3449_*
-    mkdir /data/system/camera_rus 0777 cameraserver  cameraserver
     mkdir /data/vendor/camera_process 0777 camera camera
     mkdir /data/vendor/camera_process/livephoto 0777 camera camera
     mkdir /data/vendor/cam_alog 0777 camera camera
